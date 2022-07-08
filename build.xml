@@ -68,11 +68,6 @@
         <echo message="Built"/>
     </target>
 
-    <target name="static-analysis" depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci"
-            description="Perform static analysis.">
-        <echo message="Done"/>
-    </target>
-
     <target name="-check-failure">
         <fail message="PHPUnit did not finish successfully">
             <condition>
